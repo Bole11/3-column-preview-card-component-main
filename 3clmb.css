@@ -1,0 +1,150 @@
+body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 5px 30px 5px;
+    
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.first{
+    background-color: rgb(226,133,37);
+    height: 350px;
+    width: 210px;
+    margin: 0px 60px 0px 60px;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    
+    
+
+}
+
+.second{
+    background-color: rgb(1,105,114);
+    height: 350px;
+    width: 210px;
+    margin: 0px 60px 0px 60px;
+    
+
+}
+
+.third{
+    background-color: rgb(0,64,63);
+    height: 350px;
+    width: 210px;
+    margin: 0px 60px 60px 60px;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+
+img{
+    width: 40px;
+    margin: 30px 30px 0 30px; 
+}
+
+h1{
+    margin: 20px 30px 0 30px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+
+}
+
+p{
+    margin: 30px 30px 0px 30px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.493);
+}
+
+button{
+    width: 100px;
+    height: 35px;
+    margin: 40px 30px 30px 30px;
+    border-radius: 75px 75px;
+    border: none;
+    padding: 0%;
+    
+}
+
+.btn1{
+    color:rgb(226,133,37);
+}
+
+.btn2{
+    color: rgb(1,105,114);
+}
+
+.btn3{
+    color: rgb(0,64,63);
+}
+
+.btn{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: auto;
+}
+
+.btn1:hover{
+    background-color: rgb(226,133,37);
+    color: white;
+    border: 1px solid white;
+}
+
+.btn2:hover{
+    color: white;
+    border: 1px solid white;
+    background-color: rgb(1,105,114);
+}
+
+.btn3:hover{
+    color: white;
+    border: 1px solid white;
+    background-color: rgb(0,64,63);
+    
+}
+
+
+
+
+@media(min-width:375px){
+    body{
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 10% 25% 10% 25%;
+
+    }
+
+    .container{
+        flex-direction: row;
+        
+    }
+
+    .first, .second, .third{
+        margin: 0%;
+    }
+
+    .first{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 3%;
+        
+    }
+    .third{
+        border-top-right-radius: 3%;
+        border-bottom-left-radius: 0;
+    }
+
+}
